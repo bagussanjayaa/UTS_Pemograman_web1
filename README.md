@@ -10,6 +10,6 @@ Matkul         : Pemograman Web
 
 Dosen Pengampu : Bapak Agung Nugroho, S.Kom., M.Kom.
 
-File-file html, css dan js bisa diakses di folder
+File-file html, css dan js bisa diakses pada folder uts diatas
 
 [klik disini untuk menonton video penjeasan di Youtube](https://youtu.be/Zw4VnE5Tl5Y)
