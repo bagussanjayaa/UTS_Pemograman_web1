@@ -1,0 +1,300 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f7f9fb;
+  color: #333;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+/*login */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.login-container .logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #005fa3;
+}
+
+/* modal popup */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+/* dashboard */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e8f0fa;
+  padding: 10px;
+}
+
+.menu a {
+  margin: 5px 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #0077cc;
+  border: 1px solid #0077cc;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.menu a:hover {
+  background-color: #0077cc;
+  color: white;
+}
+
+/* tabel */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #0077cc;
+  color: white;
+}
+
+/* form tambah buku / checkout */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+#hasilPesanan {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-width: 600px;
+  text-align: justify;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+#hasilPesanan h3 {
+  color: #0077cc;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#hasilPesanan p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+
+
+/* tracking layout enhancement */
+.tracking-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  background: linear-gradient(to bottom, #eef5ff, #ffffff);
+  padding: 40px 10px;
+}
+
+.tracking-container {
+  background: white;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  width: 600px;
+  text-align: center;
+}
+
+.tracking-container h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.tracking-container p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* input dan tombol */
+.tracking-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tracking-form input {
+  padding: 10px 15px;
+  width: 65%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.tracking-form input:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
+}
+
+.tracking-form button {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tracking-form button:hover {
+  background-color: #005fa3;
+}
+
+/* hasil tracking */
+#hasilTracking {
+  margin-top: 20px;
+  text-align: left;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#hasilTracking h3 {
+  color: #0077cc;
+  margin-bottom: 5px;
+}
+
+.perjalanan-item {
+  border-left: 3px solid #0077cc;
+  padding-left: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.perjalanan-item small {
+  color: #777;
+}
+

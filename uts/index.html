@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Toko Buku Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <h2>Login Toko Buku</h2>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <p><a href="#" onclick="showPopup('forgot')">Lupa Password?</a> | 
+           <a href="#" onclick="showPopup('register')">Daftar</a></p>
+    </div>
+
+    <!-- Modal Box -->
+    <div id="popupBox" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popupContent"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok Buku | Toko Buku Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Informasi Stok Buku</h1>
+    </header>
+
+    <main>
+        <table id="tabelBuku">
+            <thead>
+                <tr>
+                    <th>Kode</th>
+                    <th>Nama Buku</th>
+                    <th>Jenis</th>
+                    <th>Edisi</th>
+                    <th>Stok</th>
+                    <th>Harga</th>
+                    <th>Cover</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <h3>Tambah Buku Baru</h3>
+        <form id="formTambahBuku" onsubmit="tambahBuku(event)">
+            <input type="text" id="kodeBarang" placeholder="Kode Barang" required>
+            <input type="text" id="namaBarang" placeholder="Nama Buku" required>
+            <input type="text" id="jenisBarang" placeholder="Jenis Buku" required>
+            <input type="number" id="edisi" placeholder="Edisi" required>
+            <input type="number" id="stok" placeholder="Stok" required>
+            <input type="text" id="harga" placeholder="Harga (Rp)" required>
+            <button type="submit">Tambah</button>
+        </form>
+    </main>
+</body>
+</html>

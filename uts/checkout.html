@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Buku | Toko Buku Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Form Pemesanan Buku</h1>
+    </header>
+
+    <main>
+        <form id="formPesanan" onsubmit="prosesPesanan(event)">
+            <label>Nama Pemesan:</label>
+            <input type="text" id="namaPemesan" required>
+
+            <label>Kode Buku:</label>
+            <select id="kodeBuku"></select>
+
+            <label>Jumlah:</label>
+            <input type="number" id="jumlah" min="1" required>
+
+            <label>Metode Pembayaran:</label>
+            <select id="metode">
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="E-Wallet">E-Wallet</option>
+            </select>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+
+        <div id="hasilPesanan"></div>
+    </main>
+</body>
+</html>
